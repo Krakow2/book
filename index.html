@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Книга</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+  <link rel="stylesheet" href="./css/slick.css">
+</head>
+<body>
+
+    <div class="container">
+      <nav class="navbar navbar-light">
+        <button class="menu-btn" id="menuBtn"><span class="menu-item d-block"></span></button>
+        <a class="navbar-brand mr-0"
+          href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B0%D0%B2%D0%BA%D1%80%D0%B0%D1%84%D1%82,_%D0%93%D0%BE%D0%B2%D0%B0%D1%80%D0%B4_%D0%A4%D0%B8%D0%BB%D0%BB%D0%B8%D0%BF%D1%81">Говард
+          Филипс Лавкрафт</a>
+        <a class="contacts" href="https://ru.wikipedia.org/wiki/%D0%97%D0%BE%D0%B2_%D0%9A%D1%82%D1%83%D0%BB%D1%85%D1%83">Страница в Википедии <img src="./img/wikipedia.svg" alt="Вики" class="navbar-img ml-1"></a>
+      </nav>
+    </div>
+  <!-- /Навбар -->
+
+  <div class="burger burger-bg" id="burger">
+    <div class="container">
+      <div class="burger-dialog">
+        <ul class="burger-list">
+          <li class="burger-item"><a href="#about">О чём книга</a></li>
+          <li class="burger-item"><a href="#people">Кто уже купил</a></li>
+          <li class="burger-item"><a href="#order">Как заказать</a></li>
+          <li class="burger-item"><a href="#footer">Примечания к книге</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Меню -->
+
+  <section class="hero">
+    <div class="container">
+      <div class="row pt-5 pb-5 align-items-center">
+        <div class="col-6">
+          <h2 class="hero-subtitle">Продажа книги</h2>
+          <h1 class="hero-title">Зов Ктулху</h1>
+          <span class="hero-text mb-2 d-block">«Зов Кту́лху» — рассказ Г. Ф. Лавкрафта в жанре лавкрафтовских ужасов, написанный в
+            1926 году.</span>
+          <div class="hero-price-tag">Цена</div>
+          <div class="hero-price mb-5">200 руб</div>
+          <div class="buttons">
+            <a href="#order"><button class="hero-button btn-success mr-3" id="orderBtn">Заказать книгу.</button></a>
+            <button class="hero-button btn-primary" id="musicBtn">Слушать отрывок.</button>
+          </div>
+        </div>
+        <div class="col-6"><img src="./img/main.jpg" alt="Фото книги" class="hero-img"></div>
+      </div>
+    </div>
+  </section>
+
+<!-- /hero -->
+
+  <div class="container">
+    <section class="about pt-5 pb-5" id="about">
+      <h2 class="about-subtitle">О чём книга</h2>
+      <h3 class="about-title mb-5">Зов Ктулху</h3>
+      <div class="row">
+        <div class="col-3">
+          <div class="about-num mb-3 about-num__arrow">1</div>
+          <div class="about-text">Рассказ состоит из трёх связанных между собой частей. Он представлен как записки
+            Фрэнсиса Тёрстона, жителя Бостона, который занимался расследованиями, связанными с божеством Ктулху.</div>
+        </div>
+        <div class="col-3">
+          <div class="about-num mb-3 about-num__arrow">2</div>
+          <div class="about-text">В первой части сюжет разворачивается вокруг таинственного глиняного барельефа с
+            изображением древнего божества Ктулху. Рассказчик находит барельеф в вещах своего двоюродного деда
+            профессора Энджелла.</div>
+        </div>
+        <div class="col-3">
+          <div class="about-num mb-3 about-num__arrow">3</div>
+          <div class="about-text">Изображение было сделано скульптором Уилкоксом в марте 1925 года. Скульптор сделал
+            барельеф в состоянии полусна. В это время Уилкокса преследовали загадочные галлюцинации циклопических
+            городов.</div>
+        </div>
+        <div class="col-3">
+          <div class="about-num mb-3">4</div>
+          <div class="about-text">Подобные кошмары в тот период испытывали и многие жители. В основном это были
+            художники, скульпторы, архитекторы, и прочие люди с чувствительной психикой.</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="people pt-5 pb-5" id="people">
+    <div class="container">
+      <h2 class="people-subtitle">Эти люди уже</h2>
+      <h3 class="people-title mb-5">Купили книгу</h3>
+      <div class="people-slider">
+        <div class="people-block"><img src="./img/31.png" alt="Фото купившего" class="slider-item"></div>
+        <div class="people-block"><img src="./img/32.png" alt="Фото купившего" class="slider-item"></div>
+        <div class="people-block"><img src="./img/33.png" alt="Фото купившего" class="slider-item"></div>
+        <div class="people-block"><img src="./img/34.png" alt="Фото купившего" class="slider-item"></div>
+        <div class="people-block"><img src="./img/35.png" alt="Фото купившего" class="slider-item"></div>
+        <div class="people-block"><img src="./img/36.png" alt="Фото купившего" class="slider-item"></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="order pt-5 pb-5" id="order">
+      <div class="row">
+        <div class="col-6">
+          <h2 class="form-subtitle">Чтобы заказать книгу</h2>
+          <h3 class="form-title mb-5">Заполните форму</h3>
+          <div class="form-block">
+            <form action="thanks.html" class="form" name="form"
+              onsubmit="return validateForm()">
+              <input type="text" class="form-input p-2 mb-4" placeholder="Введите Ваше имя" name="name">
+              <input type="email" class="form-input p-2 mb-4" placeholder="Введите Ваш e-mail" name="mail">
+              <button class="form-button btn-success" type="submit" id="formBtn">Отправить данные</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-6">
+          <h2 class="interview-subtitle">Процесс</h2>
+          <h3 class="interview-title mb-5">Покупки и доставки</h3>
+          <ul class="interview-list">
+            <li class="interview-item mb-2">
+              <span class="interview-num mr-5">1</span>
+              <span class="interview-text">Заполните форму.</span>
+            </li>
+            <li class="interview-item mb-2">
+              <span class="interview-num mr-5">2</span>
+              <span class="interview-text">Выберите место доставки.</span>
+            </li>
+            <li class="interview-item mb-2">
+              <span class="interview-num mr-5">3</span>
+              <span class="interview-text">Оплатите заказ.</span>
+            </li>
+            <li class="interview-item mb-2">
+              <span class="interview-num mr-5">4</span>
+              <span class="interview-text">Книгу доставят в течении недели.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer pt-3 pb-3" id="footer">
+    <div class="container">
+      <b class="footer-title d-block pb-1 mb-3">Примечания к книге.</b>
+      <div class="row">
+        <div class="col-6 footer-text">Из-за объёма текста его иногда классифицируют как повесть в англоязычных источниках его также
+          определяют как short story или novelette.</div>
+        <div class="col-6 footer-text">С. Т. Джоши указывает на август или сентябрь как дату написания рассказа; в некоторых других
+          источниках часто указывается датой просто «лето 1926».</div>
+      </div>  
+    </div>
+  </footer>
+
+  <div id="toTop">^</div>
+
+  <audio src="./music.mp3" id="music"></audio>
+  <script src="./script/script.js"></script>
+
+  <script>
+  function validateForm() {
+  var x = document.forms["form"]["name"].value;
+  if (x == "") {
+    alert("Необходимо ввести имя");
+    return false;
+  }
+  var y = document.forms["form"]["mail"].value;
+  if (y == "") {
+    alert("Необходимо ввести e-mail");
+    return false;
+  }
+} 
+  </script>
+  <script src="./script/slick.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $('.people-slider').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+  });
+  </script>
+</body>
+</html>
